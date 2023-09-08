@@ -1,0 +1,105 @@
+[gd_resource type="Theme" load_steps=23 format=3 uid="uid://cnetqqsrmp2t0"]
+
+[ext_resource type="Texture2D" uid="uid://bei3s453mdjho" path="res://Scenes/UI/Theme/Button.png" id="1_exwb6"]
+[ext_resource type="Texture2D" uid="uid://cngt3ans6itir" path="res://Scenes/UI/Theme/ButtonDisabled.png" id="1_p1rtw"]
+[ext_resource type="Texture2D" uid="uid://ctlivcxqbf0te" path="res://Scenes/UI/Theme/Panel.png" id="1_vudxl"]
+[ext_resource type="Texture2D" uid="uid://qenrykno5720" path="res://Scenes/UI/Theme/ButtonFocus.png" id="2_vtrdx"]
+[ext_resource type="Texture2D" uid="uid://cnktb74vno6xv" path="res://Scenes/UI/Theme/ButtonClick.png" id="3_o5imb"]
+[ext_resource type="Texture2D" uid="uid://bfdnkvmeeb8m1" path="res://Scenes/UI/Theme/Grabber.png" id="5_ini2m"]
+[ext_resource type="Texture2D" uid="uid://bqofxrleakdrc" path="res://Scenes/UI/Theme/GrabberDisabled.png" id="6_4aca1"]
+[ext_resource type="Texture2D" uid="uid://g63mounby5du" path="res://Scenes/UI/Theme/ProgressBarBackground.png" id="6_t7kyf"]
+[ext_resource type="Texture2D" uid="uid://bcvkpuq2g52tb" path="res://Scenes/UI/Theme/GrabberHighlight.png" id="7_5yxrm"]
+[ext_resource type="Texture2D" uid="uid://bh250okvwo63q" path="res://Scenes/UI/Theme/ProgressBarProgress.png" id="7_o7lw1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ijghf"]
+texture = ExtResource("1_p1rtw")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p0oxl"]
+texture = ExtResource("1_exwb6")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bpy65"]
+texture = ExtResource("2_vtrdx")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_roy1s"]
+texture = ExtResource("1_exwb6")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_onww6"]
+texture = ExtResource("3_o5imb")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f3gam"]
+texture = ExtResource("6_t7kyf")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ntvk"]
+texture = ExtResource("6_t7kyf")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4p28"]
+texture = ExtResource("6_t7kyf")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3om7"]
+texture = ExtResource("1_vudxl")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tnobd"]
+texture = ExtResource("1_vudxl")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ck0gm"]
+texture = ExtResource("6_t7kyf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c4s7n"]
+texture = ExtResource("7_o7lw1")
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_ijghf")
+Button/styles/focus = SubResource("StyleBoxTexture_p0oxl")
+Button/styles/hover = SubResource("StyleBoxTexture_bpy65")
+Button/styles/normal = SubResource("StyleBoxTexture_roy1s")
+Button/styles/pressed = SubResource("StyleBoxTexture_onww6")
+HSlider/icons/grabber = ExtResource("5_ini2m")
+HSlider/icons/grabber_disabled = ExtResource("6_4aca1")
+HSlider/icons/grabber_highlight = ExtResource("7_5yxrm")
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_f3gam")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_8ntvk")
+HSlider/styles/slider = SubResource("StyleBoxTexture_g4p28")
+Panel/styles/panel = SubResource("StyleBoxTexture_r3om7")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_tnobd")
+ProgressBar/styles/background = SubResource("StyleBoxTexture_ck0gm")
+ProgressBar/styles/fill = SubResource("StyleBoxTexture_c4s7n")

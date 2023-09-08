@@ -1,0 +1,152 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcjhhoeg4huu4"]
+
+[ext_resource type="Script" path="res://Scenes/UI/RadialActionMenu.cs" id="1_6pb72"]
+[ext_resource type="Texture2D" uid="uid://by7p8wal2p4gv" path="res://Sprites/Nomads.png" id="1_vadc1"]
+[ext_resource type="Theme" uid="uid://cnetqqsrmp2t0" path="res://Scenes/UI/Theme/Theme.tres" id="2_o146k"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(815, 491)
+texture = ExtResource("1_vadc1")
+
+[node name="Radial Action Menu" type="Container" parent="." node_paths=PackedStringArray("btnUpgrade", "btnDisband", "btnExplore", "btnCollect", "btnBuild")]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_6pb72")
+_radius = 180.0
+_currentAngle = 1.57
+btnUpgrade = NodePath("")
+btnDisband = NodePath("")
+btnExplore = NodePath("")
+btnCollect = NodePath("")
+btnBuild = NodePath("")
+
+[node name="Info Panel" type="PanelContainer" parent="Radial Action Menu"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_o146k")
+
+[node name="VboxMain" type="VBoxContainer" parent="Radial Action Menu/Info Panel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="lblTitle" type="Label" parent="Radial Action Menu/Info Panel/VboxMain"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "Siren"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VboxResources" type="VBoxContainer" parent="Radial Action Menu/Info Panel/VboxMain"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+alignment = 1
+
+[node name="HboxMinerals" type="HBoxContainer" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="lblMinerals" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxMinerals"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Minerals: "
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="lblMineralAmount" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxMinerals"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "60"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HboxAlloys" type="HBoxContainer" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="lblAlloys" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxAlloys"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Alloys: "
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="lblAlloysAmount" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxAlloys"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "65"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HboxEnergy" type="HBoxContainer" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="lblEnergy" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxEnergy"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Energy: "
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="lblEnergyAmount" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxEnergy"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HboxNanites" type="HBoxContainer" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="lblNanites" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxNanites"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Nanites: "
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="lblNanitesAmount" type="Label" parent="Radial Action Menu/Info Panel/VboxMain/VboxResources/HboxNanites"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "2000"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="btnUpgrade" type="Button" parent="Radial Action Menu"]
+layout_mode = 2
+theme = ExtResource("2_o146k")
+text = "Upgrade"
+
+[node name="btnDisband" type="Button" parent="Radial Action Menu"]
+layout_mode = 2
+theme = ExtResource("2_o146k")
+text = "Disband"
+
+[node name="btnExplore" type="Button" parent="Radial Action Menu"]
+layout_mode = 2
+theme = ExtResource("2_o146k")
+text = "Explore"
+
+[node name="btnCollect" type="Button" parent="Radial Action Menu"]
+layout_mode = 2
+theme = ExtResource("2_o146k")
+text = "Collect"
+
+[node name="btnBuild" type="Button" parent="Radial Action Menu"]
+layout_mode = 2
+theme = ExtResource("2_o146k")
+text = "Build"

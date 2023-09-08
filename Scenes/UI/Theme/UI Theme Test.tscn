@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://48dwae4hlf17"]
+
+[ext_resource type="Theme" uid="uid://cnetqqsrmp2t0" path="res://Scenes/UI/Theme/Theme.tres" id="1_qaw5w"]
+[ext_resource type="Texture2D" uid="uid://cbels6qpiv08v" path="res://icon.png" id="2_dio54"]
+
+[node name="UI Theme Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qaw5w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1510, 210)
+texture = ExtResource("2_dio54")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -360.0
+offset_right = 540.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -11.5
+offset_right = 250.0
+offset_bottom = -7.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.01835)
+value = 5.0
+show_percentage = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Test"
+
+[node name="Button2" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Test2"
+
+[node name="Button3" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Test3"
+
+[node name="Button4" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "Really long test4"
